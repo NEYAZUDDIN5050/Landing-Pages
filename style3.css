@@ -1,0 +1,207 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* Left Section */
+#left {
+  width: 75%;
+  height: 100%;
+  background-color: gray;
+  display: flex;
+  flex-direction: column; /* Ensures top and bottom stack vertically */
+}
+
+#left #top {
+  width: 100%;
+  height: 70%;
+  background-color: aqua;
+  background-image: url("https://plus.unsplash.com/premium_photo-1712267564480-b3e89550e644?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHVuaXZlcnNlfGVufDB8fDB8fHww");
+  background-position: center;
+  background-size: cover;
+}
+#icon2{
+  color: antiquewhite;
+  position: relative;
+  bottom: 0%;
+  right: 0%;
+  font-size: 25px;
+}
+
+#left #lbottom {
+  flex: 3;
+  width: 100%;
+  height: 20%;
+  background-color: rgb(10, 10, 9);
+  color: aliceblue;
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  justify-content: center; /* Centers children vertically */
+  padding: 100px 100px; /* Adjusted padding for better layout */
+  box-sizing: border-box; /* Ensures padding is included in the height */
+  overflow: hidden; /* Prevents overflow */
+  position: relative;
+  margin-right: 20px;
+  align-items: center;
+  
+  
+}
+
+#lbtmcontent {
+  position: relative;
+  display: flex;
+  justify-content: space-between; /* Space between left and right sections */
+  align-items: center; /* Vertically center content */
+  width: 80%;
+  margin-right: 20%;
+  height: 100%; /* Ensures it fills the parent container */
+}
+
+#cntntleft {
+  width: 20%; /* Prevents the content from overflowing */
+  display: flex;
+  flex-direction: column; /* Stacks content vertically */
+  gap: 10px; /* Adds spacing between child elements */
+}
+
+#cntntleft p {
+  font-size: 7px;
+  color: #ccc; /* Adjusted for readability */
+  margin: 0; /* Ensures no unexpected spacing */
+}
+
+#cntntright {
+  width: 25%; /* Matches the width of #cntntleft */
+  
+  flex-direction: column; /* Stacks rows vertically */
+  gap: 10px; /* Adds spacing between rows */
+  position: relative;
+  margin-left: 40px;
+}
+
+.row {
+    position:absolute;
+    content: cover;
+    display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align rows correctly */
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding: 10px 10px; /* Added padding for better spacing */
+  border-radius: 5px; /* Rounded corners for aesthetics */
+}
+
+.row .relem {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+}
+
+.row .relemtext {
+  margin-left: 10px;
+  color: #fff;
+  margin-right: 10px;
+  font-size: 10px;
+}
+
+.row .relemtext h6 {
+  opacity: 0.7;
+  font-weight: 500;
+  margin-top: 5px;
+  font-size: 5px;
+}
+
+/* Right Section */
+#right {
+  width: 25%;
+  height: 100%;
+  background-color: rgba(150, 100, 19, 0.84);
+  display: flex;
+  flex-direction: column; /* Stack top and bottom */
+}
+
+#right #rtop {
+  width: 100%;
+  height: 70%;
+  background-color: rgb(2, 2, 4);
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+  position: relative;
+}
+#rtop a{
+  margin-bottom: 30px;
+  text-decoration: none;
+  color:whitesmoke;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing:3px;
+  text-transform: uppercase;
+  font-family:"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif ;
+}
+#rtop a:nth-child(2)::before{
+  content: "-";
+  width: 10px;
+  height: 2px;
+
+}
+#icons{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: antiquewhite;
+  padding: 30px;
+}
+#icons i{
+  font-size: 25px;
+}
+
+#right #rbottom {
+  width: 100%;
+  height: 30%;
+  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHVuaXZlcnNlfGVufDB8fDB8fHww");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#capsule{
+  position: absolute;
+  bottom: 5%;
+  transform: translate(-50% 0);
+  width:100%;
+  padding: 10px 10px;
+  background-color: rgba(255, 235, 205, 0.36);
+  border-radius: 10px;
+}
+#capsule h2{
+  font-size: 8px;
+  color: beige;
+}
+#capsule h3{
+  font-size: 10px;
+  color: beige;
+}
+
+
